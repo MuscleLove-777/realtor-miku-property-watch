@@ -1,0 +1,154 @@
+# ============================================================
+# 上本町ハイハイタウン 物件価格ウォッチ
+# ============================================================
+# 必要なSecrets:
+#   GOOGLE_CREDENTIALS_JSON  - Google サービスアカウント認証情報 (スプレッドシート書き込み用)
+#   GMAIL_TOKEN_JSON         - Gmail OAuth トークン (週次レポート送信用・任意)
+# ============================================================
+
+name: 物件価格ウォッチ（上本町ハイハイタウン）
+
+on:
+  schedule:
+    # 毎日 JST 10:00 (UTC 01:00) - 物件価格スクレイピング
+    - cron: '0 1 * * *'
+    # 毎週月曜 JST 09:00 (UTC 00:00) - 週次レポート送信
+    - cron: '0 0 * * 1'
+  workflow_dispatch:
+    inputs:
+      job_type:
+        description: '実行するジョブ (scrape / report / both)'
+        required: true
+        default: 'both'
+        type: choice
+        options:
+          - scrape
+          - report
+          - both
+
+permissions:
+  contents: write
+
+jobs:
+  # ============================================================
+  # 日次ジョブ: SUUMO から物件価格をスクレイピング
+  # ============================================================
+  daily-scrape:
+    if: >-
+      github.event_name == 'schedule' && github.event.schedule == '0 1 * * *'
+      || github.event_name == 'workflow_dispatch' && (github.event.inputs.job_type == 'scrape' || github.event.inputs.job_type == 'both')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v4
+
+      - name: Python 3.11 をセットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 依存パッケージをインストール
+        run: |
+          pip install --upgrade pip
+          pip install requests beautifulsoup4 gspread google-auth google-api-python-client lxml
+
+      - name: Google 認証情報を配置
+        env:
+          GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+        run: |
+          echo "${GOOGLE_CREDENTIALS_JSON}" > credentials.json
+
+      - name: SUUMO から物件価格をスクレイピング
+        id: scrape
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: credentials.json
+        run: |
+          for i in 1 2 3; do
+            python scrape_suumo.py && break
+            echo "リトライ ${i}/3 - 10秒待機..."
+            sleep 10
+          done
+
+      - name: スプレッドシートにデータを保存
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: credentials.json
+        run: |
+          for i in 1 2 3; do
+            python save_to_sheets.py && break
+            echo "リトライ ${i}/3 - 10秒待機..."
+            sleep 10
+          done
+
+      - name: JSONデータをコミット＆プッシュ [skip ci]
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --staged --quiet || git commit -m "物件データ更新: $(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M') [skip ci]"
+          git push
+
+      - name: 認証情報を削除
+        if: always()
+        run: rm -f credentials.json
+
+      - name: エラーログ出力
+        if: failure()
+        run: |
+          echo "::error::日次スクレイピングが失敗しました。$(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M JST')"
+          echo "※ LINE通知は後日追加予定"
+
+  # ============================================================
+  # 週次ジョブ: Gmail でレポート送信（毎週月曜 JST 09:00）
+  # ============================================================
+  weekly-report:
+    if: >-
+      github.event_name == 'schedule' && github.event.schedule == '0 0 * * 1'
+      || github.event_name == 'workflow_dispatch' && (github.event.inputs.job_type == 'report' || github.event.inputs.job_type == 'both')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v4
+
+      - name: Python 3.11 をセットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 依存パッケージをインストール
+        run: |
+          pip install --upgrade pip
+          pip install requests beautifulsoup4 gspread google-auth google-api-python-client lxml
+
+      - name: Google 認証情報を配置
+        env:
+          GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+          GMAIL_TOKEN_JSON: ${{ secrets.GMAIL_TOKEN_JSON }}
+        run: |
+          echo "${GOOGLE_CREDENTIALS_JSON}" > credentials.json
+          if [ -n "${GMAIL_TOKEN_JSON}" ]; then
+            echo "${GMAIL_TOKEN_JSON}" > gmail_token.json
+          fi
+
+      - name: 週次レポートをメール送信
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: credentials.json
+        run: |
+          for i in 1 2 3; do
+            python send_weekly_report.py && break
+            echo "リトライ ${i}/3 - 10秒待機..."
+            sleep 10
+          done
+
+      - name: 認証情報を削除
+        if: always()
+        run: rm -f credentials.json gmail_token.json
+
+      - name: エラーログ出力
+        if: failure()
+        run: |
+          echo "::error::週次レポート送信が失敗しました。$(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M JST')"
+          echo "※ LINE通知は後日追加予定"
