@@ -74,6 +74,7 @@ jobs:
       - name: スプレッドシートにデータを保存
         env:
           GOOGLE_APPLICATION_CREDENTIALS: credentials.json
+          GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
         run: |
           for i in 1 2 3; do
             python save_to_sheets.py && break
@@ -85,7 +86,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
+          git add suumo_data_*.json
           git diff --staged --quiet || git commit -m "物件データ更新: $(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M') [skip ci]"
           git push
 
