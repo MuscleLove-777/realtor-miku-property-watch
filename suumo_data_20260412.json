@@ -1,0 +1,320 @@
+{
+  "scrape_date": "2026-04-12",
+  "haihaitown_listings": [
+    {
+      "name": "■積水ハウス(株)他2社旧分譲■内廊下設計 ■24時間有人管理",
+      "url": "https://suumo.jp/ms/chuko/osaka/sc_osakashichuo/nc_20238131/",
+      "price_man": 5980.0,
+      "area_sqm": 55.15,
+      "price_per_sqm": 108.43,
+      "layout": "1LDK",
+      "floor": null,
+      "building_age": "2008年5月",
+      "station_access": "地下鉄谷町線「谷町九丁目」徒歩5分"
+    },
+    {
+      "name": "■2021年(令和3年)9月建築■約90㎡の4LDKタイプ・南東角住戸",
+      "url": "https://suumo.jp/ms/chuko/osaka/sc_osakashitennoji/nc_77688855/",
+      "price_man": 13800.0,
+      "area_sqm": 90.15,
+      "price_per_sqm": 153.08,
+      "layout": "4LDK",
+      "floor": null,
+      "building_age": "2021年9月",
+      "station_access": "近鉄難波線「大阪上本町」徒歩4分"
+    },
+    {
+      "name": "～積水ハウスの分譲マンション「グランドメゾン」シリーズ～",
+      "url": "https://suumo.jp/ms/chuko/osaka/sc_osakashitennoji/nc_20547936/",
+      "price_man": 15800.0,
+      "area_sqm": 101.72,
+      "price_per_sqm": 155.33,
+      "layout": "3LDK+S（納戸）",
+      "floor": null,
+      "building_age": "2020年6月",
+      "station_access": "近鉄難波線「大阪上本町」徒歩7分"
+    },
+    {
+      "name": "フルリノベーション済！54.17㎡の広々2LDK！駅徒歩4分の好立地！",
+      "url": "https://suumo.jp/ms/chuko/osaka/sc_osakashitennoji/nc_20005710/",
+      "price_man": 3199.0,
+      "area_sqm": 54.17,
+      "price_per_sqm": 59.05,
+      "layout": "1LDK",
+      "floor": null,
+      "building_age": "1983年11月",
+      "station_access": "地下鉄谷町線「谷町九丁目」徒歩4分"
+    },
+    {
+      "name": "各線鶴橋駅から徒歩7分の3LDKマンションです。",
+      "url": "https://suumo.jp/ms/chuko/osaka/sc_osakashitennoji/nc_20213059/",
+      "price_man": 3480.0,
+      "area_sqm": 63.8,
+      "price_per_sqm": 54.55,
+      "layout": "3LDK",
+      "floor": null,
+      "building_age": "1981年7月",
+      "station_access": "地下鉄千日前線「鶴橋」徒歩7分"
+    },
+    {
+      "name": "●最上階につき眺望・日当たり良好♪●周辺環境が充実しております♪",
+      "url": "https://suumo.jp/ms/chuko/osaka/sc_osakashitennoji/nc_20503686/",
+      "price_man": 3700.0,
+      "area_sqm": 58.24,
+      "price_per_sqm": 63.53,
+      "layout": "2LDK",
+      "floor": null,
+      "building_age": "1982年11月",
+      "station_access": "近鉄難波線「大阪上本町」徒歩4分"
+    },
+    {
+      "name": "【弊社窓口物件】◆ペット飼育可(規約有)◆駅徒歩約１分◆室内状況良好",
+      "url": "https://suumo.jp/ms/chuko/osaka/sc_osakashitennoji/nc_20615653/",
+      "price_man": 4480.0,
+      "area_sqm": 61.42,
+      "price_per_sqm": 72.94,
+      "layout": "2LDK",
+      "floor": null,
+      "building_age": "2004年9月",
+      "station_access": "地下鉄谷町線「谷町九丁目」徒歩1分"
+    },
+    {
+      "name": "周辺環境が充実しております♪リフォーム完了済物件♪",
+      "url": "https://suumo.jp/ms/chuko/osaka/sc_osakashitennoji/nc_20601983/",
+      "price_man": 8980.0,
+      "area_sqm": 134.7,
+      "price_per_sqm": 66.67,
+      "layout": "3LDK",
+      "floor": null,
+      "building_age": "1990年1月",
+      "station_access": "地下鉄谷町線「谷町九丁目」徒歩5分"
+    },
+    {
+      "name": "☆ペットと暮らせるマンションです！（規約制限有）",
+      "url": "https://suumo.jp/ms/chuko/osaka/sc_osakashitennoji/nc_20310480/",
+      "price_man": 10500.0,
+      "area_sqm": 74.72,
+      "price_per_sqm": 140.52,
+      "layout": "2LDK",
+      "floor": null,
+      "building_age": "2024年10月",
+      "station_access": "地下鉄谷町線「四天王寺前夕陽ケ丘」徒歩5分"
+    },
+    {
+      "name": "上汐５（四天王寺前夕陽ケ丘駅） 1800万円",
+      "url": "https://suumo.jp/ms/chuko/osaka/sc_osakashitennoji/nc_77975756/",
+      "price_man": 1800.0,
+      "area_sqm": 42.12,
+      "price_per_sqm": 42.74,
+      "layout": "2DK",
+      "floor": null,
+      "building_age": "1967年8月",
+      "station_access": "地下鉄谷町線「四天王寺前夕陽ケ丘」徒歩4分"
+    },
+    {
+      "name": "お好きなフルリノベーション可能♪オートロック付きマンション×駅徒歩５分",
+      "url": "https://suumo.jp/ms/chuko/osaka/sc_osakashitennoji/nc_20599622/",
+      "price_man": 1980.0,
+      "area_sqm": 44.81,
+      "price_per_sqm": 44.19,
+      "layout": "1DK",
+      "floor": null,
+      "building_age": "1983年11月",
+      "station_access": "地下鉄谷町線「谷町九丁目」徒歩5分"
+    },
+    {
+      "name": "◆内覧可能（予約制）☆3路線以上利用可能☆南向きで陽当たり、通風良好",
+      "url": "https://suumo.jp/ms/chuko/osaka/sc_osakashitennoji/nc_20594164/",
+      "price_man": 1980.0,
+      "area_sqm": 44.81,
+      "price_per_sqm": 44.19,
+      "layout": "1DK",
+      "floor": null,
+      "building_age": "1983年11月",
+      "station_access": "地下鉄谷町線「谷町九丁目」徒歩5分"
+    },
+    {
+      "name": "[即日内覧受付中！頭金０円OK]].ギフトカード10万円分プレゼント♪",
+      "url": "https://suumo.jp/ms/chuko/osaka/sc_osakashitennoji/nc_20113002/",
+      "price_man": 3199.0,
+      "area_sqm": 54.17,
+      "price_per_sqm": 59.05,
+      "layout": "3LDK",
+      "floor": null,
+      "building_age": "1983年11月",
+      "station_access": "地下鉄谷町線「谷町九丁目」徒歩4分"
+    },
+    {
+      "name": "生玉町（谷町九丁目駅） 3199万円",
+      "url": "https://suumo.jp/ms/chuko/osaka/sc_osakashitennoji/nc_20521354/",
+      "price_man": 3199.0,
+      "area_sqm": 54.17,
+      "price_per_sqm": 59.05,
+      "layout": "1LDK",
+      "floor": null,
+      "building_age": "1983年11月",
+      "station_access": "地下鉄谷町線「谷町九丁目」徒歩5分"
+    },
+    {
+      "name": "上汐３（谷町九丁目駅） 3280万円",
+      "url": "https://suumo.jp/ms/chuko/osaka/sc_osakashitennoji/nc_78673488/",
+      "price_man": 3280.0,
+      "area_sqm": 72.68,
+      "price_per_sqm": 45.13,
+      "layout": "2LDK",
+      "floor": null,
+      "building_age": "1977年3月",
+      "station_access": "地下鉄谷町線「谷町九丁目」徒歩4分"
+    },
+    {
+      "name": "■新着物件！■2026年1月リフォーム完了！■駅近！■南西角住戸！",
+      "url": "https://suumo.jp/ms/chuko/osaka/sc_osakashitennoji/nc_20452521/",
+      "price_man": 3980.0,
+      "area_sqm": 57.48,
+      "price_per_sqm": 69.24,
+      "layout": "2LDK+S（納戸）",
+      "floor": null,
+      "building_age": "1997年3月",
+      "station_access": "地下鉄谷町線「谷町九丁目」徒歩5分"
+    },
+    {
+      "name": "上本町６（大阪上本町駅） 4180万円",
+      "url": "https://suumo.jp/ms/chuko/osaka/sc_osakashitennoji/nc_20331973/",
+      "price_man": 4180.0,
+      "area_sqm": 59.01,
+      "price_per_sqm": 70.84,
+      "layout": "3LDK",
+      "floor": null,
+      "building_age": "1984年4月",
+      "station_access": "近鉄難波線「大阪上本町」徒歩5分"
+    },
+    {
+      "name": "上本町６（大阪上本町駅） 4998万円",
+      "url": "https://suumo.jp/ms/chuko/osaka/sc_osakashitennoji/nc_79007551/",
+      "price_man": 4998.0,
+      "area_sqm": 68.22,
+      "price_per_sqm": 73.26,
+      "layout": "2LDK+S（納戸）",
+      "floor": null,
+      "building_age": "1980年9月",
+      "station_access": "近鉄難波線「大阪上本町」徒歩1分"
+    },
+    {
+      "name": "◆３月末までのご成約限定キャンペーン実施中◆詳細は諸費用欄参照♪",
+      "url": "https://suumo.jp/ms/chuko/osaka/sc_osakashichuo/nc_78415462/",
+      "price_man": 4998.0,
+      "area_sqm": 52.96,
+      "price_per_sqm": 94.37,
+      "layout": "2LDK",
+      "floor": null,
+      "building_age": "2000年7月",
+      "station_access": "地下鉄谷町線「谷町九丁目」徒歩2分"
+    },
+    {
+      "name": "【年中無休】【ご成約で商品券15万円】☆築浅マンション☆",
+      "url": "https://suumo.jp/ms/chuko/osaka/sc_osakashitennoji/nc_20459021/",
+      "price_man": 6850.0,
+      "area_sqm": 54.31,
+      "price_per_sqm": 126.13,
+      "layout": "2LDK",
+      "floor": null,
+      "building_age": "2024年11月",
+      "station_access": "地下鉄谷町線「四天王寺前夕陽ケ丘」徒歩7分"
+    },
+    {
+      "name": "生玉前町（四天王寺前夕陽ケ丘駅） 6850万円",
+      "url": "https://suumo.jp/ms/chuko/osaka/sc_osakashitennoji/nc_78838519/",
+      "price_man": 6850.0,
+      "area_sqm": 54.31,
+      "price_per_sqm": 126.13,
+      "layout": "1LDK+S（納戸）",
+      "floor": null,
+      "building_age": "2024年11月",
+      "station_access": "地下鉄谷町線「四天王寺前夕陽ケ丘」徒歩5分"
+    },
+    {
+      "name": "生玉前町（四天王寺前夕陽ケ丘駅） 7000万円",
+      "url": "https://suumo.jp/ms/chuko/osaka/sc_osakashitennoji/nc_78859410/",
+      "price_man": 7000.0,
+      "area_sqm": 54.31,
+      "price_per_sqm": 128.89,
+      "layout": "1LDK+S（納戸）",
+      "floor": null,
+      "building_age": "2024年11月",
+      "station_access": "地下鉄谷町線「四天王寺前夕陽ケ丘」徒歩5分"
+    },
+    {
+      "name": "生玉前町（四天王寺前夕陽ケ丘駅） 7000万円",
+      "url": "https://suumo.jp/ms/chuko/osaka/sc_osakashitennoji/nc_20075335/",
+      "price_man": 7000.0,
+      "area_sqm": 54.31,
+      "price_per_sqm": 128.89,
+      "layout": "1LDK+S（納戸）",
+      "floor": null,
+      "building_age": "2024年11月",
+      "station_access": "地下鉄谷町線「四天王寺前夕陽ケ丘」徒歩7分"
+    },
+    {
+      "name": "上汐３（谷町九丁目駅） 7480万円",
+      "url": "https://suumo.jp/ms/chuko/osaka/sc_osakashitennoji/nc_20593987/",
+      "price_man": 7480.0,
+      "area_sqm": 67.0,
+      "price_per_sqm": 111.64,
+      "layout": "3LDK",
+      "floor": null,
+      "building_age": "2012年10月",
+      "station_access": "地下鉄谷町線「谷町九丁目」徒歩3分"
+    },
+    {
+      "name": "上本町６（大阪上本町駅） 7998万円",
+      "url": "https://suumo.jp/ms/chuko/osaka/sc_osakashitennoji/nc_79189961/",
+      "price_man": 7998.0,
+      "area_sqm": 100.92,
+      "price_per_sqm": 79.25,
+      "layout": "3LDK+S（納戸）",
+      "floor": null,
+      "building_age": "1980年9月",
+      "station_access": "近鉄大阪線「大阪上本町」徒歩1分"
+    },
+    {
+      "name": "◇安心安全のオートロック付き◇広いLDKで快適空間",
+      "url": "https://suumo.jp/ms/chuko/osaka/sc_osakashitennoji/nc_20585485/",
+      "price_man": 8980.0,
+      "area_sqm": 134.7,
+      "price_per_sqm": 66.67,
+      "layout": "3LDK",
+      "floor": null,
+      "building_age": "1990年1月",
+      "station_access": "地下鉄谷町線「谷町九丁目」徒歩5分"
+    },
+    {
+      "name": "上本町西５（大阪上本町駅） 9880万円",
+      "url": "https://suumo.jp/ms/chuko/osaka/sc_osakashichuo/nc_79035354/",
+      "price_man": 9880.0,
+      "area_sqm": 65.09,
+      "price_per_sqm": 151.79,
+      "layout": "2LDK",
+      "floor": null,
+      "building_age": "2008年5月",
+      "station_access": "近鉄難波線「大阪上本町」徒歩10分"
+    },
+    {
+      "name": "上本町６（大阪上本町駅） 1億580万円",
+      "url": "https://suumo.jp/ms/chuko/osaka/sc_osakashitennoji/nc_20608626/",
+      "price_man": 10580.0,
+      "area_sqm": 77.33,
+      "price_per_sqm": 136.82,
+      "layout": "3LDK",
+      "floor": null,
+      "building_age": "2024年4月",
+      "station_access": "近鉄難波線「大阪上本町」徒歩2分"
+    }
+  ],
+  "area_listings": [],
+  "summary": {
+    "haihaitown_count": 28,
+    "haihaitown_avg_price_per_sqm": 90.44,
+    "area_count": 0,
+    "area_avg_price_per_sqm": null
+  }
+}
